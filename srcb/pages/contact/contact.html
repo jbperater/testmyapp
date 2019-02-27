@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item *ngFor = "let user of anyarr; let i=index">
+      <h2>{{user}}<button (click)="remove(i)" ><ion-icon name="remove"></ion-icon></button></h2>
+      
+    </ion-item>
+  </ion-list>
+  <ion-input type="text" value="" [(ngModel)]="textlang" placeholder="Enter Text" ></ion-input>
+  <button ion-button full (click)="add()">add</button>
+  <ion-icon name="ionic" item-start></ion-icon>
+      @ionicframework
+</ion-content>

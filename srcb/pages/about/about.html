@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <ion-title>Simple Login</ion-title>
+  <ion-list>
+    <ion-item>  
+        <ion-label>Num1</ion-label>
+        <ion-input type="number" value="" [(ngModel)]="num1" ></ion-input>
+    </ion-item>
+    <ion-item>  
+      <ion-label>Num2</ion-label>
+      <ion-input type="number" value="" [(ngModel)]="num2"></ion-input>
+  </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="dark" (click)='add()' >Add</button>
+    <button ion-button color="dark" (click)='sub()' >Sub</button>
+    <button ion-button color="dark" (click)='mul()' >Mul</button>
+    <button ion-button color="dark" (click)='div()' >Div</button>
+  </div>
+  <ion-item>  
+    <ion-label>Answer</ion-label>
+    <ion-input type="number" value="" [(ngModel)]="ans" [readonly]=true ></ion-input>
+</ion-item>
+</ion-content>
